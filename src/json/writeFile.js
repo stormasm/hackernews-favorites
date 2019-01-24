@@ -6,7 +6,7 @@ const user = 'michaelangerman'
 const fn = 'favorites'
 const numofpages = 1
 
-async function writeFavories() {
+async function writeFavorites() {
   let data = await getFavs(user, numofpages)
   // console.info('result', data)
 
@@ -16,7 +16,7 @@ async function writeFavories() {
 }
 
 async function go() {
-  await writeFavories()
+  await writeFavorites()
 }
 
 go()
