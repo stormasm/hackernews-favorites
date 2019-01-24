@@ -46,7 +46,8 @@
     "exec": "node src/main.js"
   },
   "dependencies": {
-    "x-ray": "^2.3.3"
+    "x-ray": "^2.3.3",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "babel-cli": "*",
