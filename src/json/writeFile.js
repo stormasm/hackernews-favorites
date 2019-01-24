@@ -1,6 +1,6 @@
 import { writeJsonDataToFilename } from '../util/file-util'
 
-const getFavs = require('../hnfa/main')
+const getFavs = require('../hnfa/idAry')
 
 const user = 'michaelangerman'
 const fn = 'favorites'
