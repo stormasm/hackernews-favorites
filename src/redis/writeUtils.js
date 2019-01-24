@@ -8,6 +8,11 @@ export async function sadd(key, member) {
   client.quit()
 }
 
+export async function saddBig(client, key, member) {
+  let sadd = promisify(client.sadd).bind(client)
+  let writeResult = await sadd(key, member)
+}
+
 export async function hset(key, field, value) {
   let client = redis.createClient()
   let hset = promisify(client.hset).bind(client)
