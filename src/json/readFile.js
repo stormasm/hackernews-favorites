@@ -1,8 +1,7 @@
-
-import favids from "./../../data/in/fvid.json";
+import favids from './../../data/in/fvid.json'
 import { writeJsonDataToFilename } from '../util/file-util'
 
-import { sadd } from "./../redis/writeUtils";
+import { sadd } from './../redis/writeUtils'
 
 const fn = 'test'
 const keyname = 'favoriteset'
@@ -21,8 +20,8 @@ async function readFavoritesFileTest() {
 
 function processIdAry(ids) {
   ids.forEach(function(item) {
-    sadd(keyname, item);
-  });
+    sadd(keyname, item)
+  })
 }
 
 async function go() {
