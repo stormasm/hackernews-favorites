@@ -5,9 +5,10 @@ const getFavs = require('../hnfa/idAry')
 const user = 'michaelangerman'
 const fn = 'favorites'
 const numofpages = 1
+const offset = 1
 
 async function writeFavorites() {
-  let data = await getFavs(user, numofpages)
+  let data = await getFavs(user, numofpages, offset)
   // console.info('result', data)
 
   let json = JSON.stringify(data)
